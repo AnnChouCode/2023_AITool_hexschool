@@ -6,19 +6,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,8 +97,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -37,16 +115,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -55,9 +137,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
-
 
 /* 輸入 GOOGLE FONTS----------------- */
 .bold900 {
@@ -150,10 +229,12 @@ body {
 :before,
 *:after {
   box-sizing: border-box;
+  outline: 1px solid salmon;
 }
 
 .container {
-  width: 1296px;
+  max-width: 1326px;
+  padding: 0 15px;
   margin: 0 auto;
   color: white;
 }
@@ -172,6 +253,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .header .logo {
   display: block;
   width: 245px;
@@ -184,8 +266,10 @@ body {
 }
 
 .navbar_btn {
-  cursor: pointer; /* 改變滑鼠形狀 */
-  display: none; /* 在電腦版時不顯示 */
+  cursor: pointer;
+  /* 改變滑鼠形狀 */
+  display: none;
+  /* 在電腦版時不顯示 */
   background-color: transparent;
   color: white;
   border: 0;
@@ -204,7 +288,6 @@ body {
   transform: scale(1.1);
 }
 
-
 /* HEADER 表頭_下 */
 .header_body h1 {
   margin: 40px 0;
@@ -213,24 +296,24 @@ body {
 .header_body button {
   margin-bottom: 100px;
 }
+
 .header_body .start_button a {
   display: block;
   padding: 20px 40px;
 }
+
 /* HEADER>服務卡 */
 .header_body .deco {
   margin-left: auto;
   display: flex;
   justify-content: end;
 }
+
 .deco img {
   width: 180px;
   height: 180px;
   display: block;
 }
-
-
-
 
 /********* ERVICE SECTION------
 ----------------- *******/
@@ -245,6 +328,7 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+
 .service p {
   width: 856px;
 }
@@ -254,6 +338,7 @@ body {
   display: flex;
   gap: 24px;
 }
+
 .sc_info {
   display: flex;
   flex-direction: column;
@@ -262,19 +347,22 @@ body {
   border: 1px solid #fff;
   border-radius: 16px;
 }
+
 .service_card .material-icons {
   font-size: 80px;
 }
+
 .service_card p {
   margin: 20px 0;
 }
 
-
-
-
 /******* NTERPRISE SECTION------
 ----------------- *******/
 /* 廠商 ENTERPRISE LOGO */
+.enterprise_section {
+  margin-bottom: 160px;
+}
+
 .enterprise_logo {
   margin-top: 80px;
   position: relative;
@@ -305,7 +393,8 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
-  overflow-x: scroll; /* 讓 Logo 能水平滾動 */
+  overflow-x: scroll;
+  /* 讓 Logo 能水平滾動 */
   margin-bottom: 20px;
 }
 
@@ -314,56 +403,72 @@ body {
 .enterprise_logo ul::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .enterprise_logo ul {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .enterprise_logo .e_logo {
   width: 160px;
   height: 40px;
-  display: block; /* 消除 logo 圖下方空白 */
+  display: block;
+  /* 消除 logo 圖下方空白 */
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .enterprise_logo .logo01 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true);
   width: 100px;
 }
+
 .enterprise_logo .logo02 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true);
 }
+
 .enterprise_logo .logo03 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true);
 }
+
 .enterprise_logo .logo04 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true);
 }
+
 .enterprise_logo .logo05 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true);
 }
+
 .enterprise_logo .logo06 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true);
 }
+
 .enterprise_logo .logo07 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true);
 }
+
 .enterprise_logo .logo08 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true);
 }
+
 .enterprise_logo .logo09 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true);
 }
+
 .enterprise_logo .logo10 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true);
 }
+
 .enterprise_logo .logo11 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true);
 }
+
 .enterprise_logo .logo12 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true);
 }
@@ -372,12 +477,13 @@ body {
 .recommend {
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
   margin: 160px 0;
+  /* flex-wrap:nowrap; */
 }
 
 .recommend_card {
-  width: 416px;
+  width: calc(100% / 3);
   height: 400px;
   background-color: RGB(255, 255, 255, 0.08);
   border-radius: 16px;
@@ -385,11 +491,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .recommend_stars {
   display: flex;
   gap: 4px;
   margin-bottom: 22px;
 }
+
 .recommend_text {
   flex-grow: 1;
   text-align: justify;
@@ -401,6 +509,7 @@ body {
   align-items: center;
   height: 49px;
 }
+
 .recommender_photo {
   width: 48px;
   height: 48px;
@@ -408,17 +517,20 @@ body {
   margin-right: 16px;
 }
 
-
-
-
 /****** PRODUCT SECTION --------
 ----------------- *******/
 .product_section {
-  width: 1920px;
+  width: 100%;
   border-radius: 160px;
   background-color: #ffffff;
-  padding: 160px 312px;
+  padding: 160px 15px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.product_contain {
+  max-width: 1296px;
 }
 
 /* SLOGAN */
@@ -433,6 +545,7 @@ body {
   position: relative;
   margin-bottom: 24px;
 }
+
 .input .material-icons {
   margin-right: 12px;
   color: #919191;
@@ -440,8 +553,9 @@ body {
   left: 40px;
   top: 20px;
 }
+
 .searchbar {
-  width: 1296px;
+  width: 100%;
   height: 64px;
   padding: 20px 40px 20px 76px;
   border-radius: 16px;
@@ -449,6 +563,7 @@ body {
   border: 0 none;
   outline: none;
 }
+
 .searchbar:-internal-autofill-previewed,
 .searchbar:-internal-autofill-selected {
   -webkit-text-fill-color: #919191;
@@ -477,19 +592,25 @@ body {
 /* 分類按鈕 */
 .select_product {
   display: flex;
+  justify-content: space-between;
   gap: 8px;
   color: #919191;
 }
+
 .select_product li {
   padding: 8px 16px;
   border-radius: 16px;
   background-color: #ffffff;
+  text-align: center;
+  /* 讓文字在 RWD 時換行也能保持中間位置 */
 }
+
 .select_product li.active,
 .select_product li:hover {
   color: #020202;
   background-color: #f2f2f2;
 }
+
 .select_btn .material-icons {
   font-size: 16px;
   margin-left: 12px;
@@ -509,6 +630,8 @@ body {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   padding: 20px 0;
   border-radius: 16px;
+  white-space: nowrap;
+  /* 避免 RWD 時換行 */
 }
 
 .dropdown_menu a {
@@ -525,13 +648,14 @@ body {
 
 /* 產品列表 */
 .product {
-  width: 1296px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 24px;
   margin: 40px 0;
 }
+
 /* 產品列表>內部卡片*/
 .product_card {
   width: 416px;
@@ -539,7 +663,8 @@ body {
   border: 1pt solid #f2f2f2;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* 隱藏圖片上方超出卡片圓角的部分 */
+  overflow: hidden;
+  /* 隱藏圖片上方超出卡片圓角的部分 */
 }
 
 /* 產品內部卡片─圖片區----------------- */
@@ -547,39 +672,21 @@ body {
   width: 416px;
   height: 312px;
   overflow: hidden;
-  /* 隱藏 a href 的文字 "pic"，和 hover 超出卡片尺寸 */
+  display: flex;
+  /* 讓 cover 內的圖片保持在中央 */
+  align-items: center;
+  justify-content: center;
 }
+
 .product_img {
   display: block;
-  width: 416px;
-  height: 312px;
-  /*   border-top-right-radius: 16px;
-  border-top-left-radius: 16px; .card 使用 overflow，就不需要於 img 設定圓角了*/
-  text-indent: 101%;
-  /*   overflow: hidden; 父層已經寫了 overflow，不需要再寫一次了*/
-  word-spacing: none;
+  height: 100%;
+
   transition: all 0.3s ease-in-out;
 }
+
 .product_img:hover {
   transform: scale(1.2);
-}
-.product_card .pimg1 {
-  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png);
-}
-.product_card .pimg2 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true);
-}
-.product_card .pimg3 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true);
-}
-.product_card .pimg4 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true);
-}
-.product_card .pimg5 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true);
-}
-.product_card .pimg6 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true);
 }
 
 /* 產品內部卡片>抽屜區----------------- */
@@ -597,6 +704,7 @@ body {
   padding: 20px 32px;
   border-top: 1px solid #f2f2f2;
 }
+
 .drawer_flex {
   display: flex;
   justify-content: space-between;
@@ -610,6 +718,7 @@ body {
   justify-content: end;
   gap: 4px;
 }
+
 .page li {
   display: block;
   width: 48px;
@@ -619,16 +728,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .page .default {
   background-color: #020202;
   color: #ffffff;
 }
+
 .page .material-icons {
   font-size: 5px;
 }
-
-
-
 
 /****** FOOTER SECTION --------
 ----------------- *******/
@@ -643,9 +751,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 80px 336px;
-  margin: 80px 0;
+  margin: 160px 0;
 }
+
 .build_service a {
   padding: 20px 32px;
   display: flex;
@@ -659,6 +767,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .footer_top .logo {
   display: block;
   width: 245px;
@@ -669,6 +778,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .footer_menu {
   display: flex;
   flex-direction: column;
@@ -686,8 +796,8 @@ body {
 }
 
 .copyright {
-  width: 203px;
-  padding: 12px 80px 12px 0;
+  margin-right: 100px;
+  padding: 12px 0;
 }
 
 .footer_buttom ul {
@@ -699,6 +809,7 @@ body {
   display: block;
   padding: 12px 0;
 }
+
 .footer_buttom button {
   background-color: #020202;
   color: #ffffff;
@@ -710,107 +821,34 @@ body {
   margin-left: auto;
 }
 
-/****** RWD --------
+/****** RWD 1200--------
 ----------------- *******/
-@media (max-width: 375px) {
-  .container {
-    width: 351px;
-  }
-
-  /*  HEADER_SECTION  */
-  .header_section {
-    margin-bottom: 120px;
-  }
-  /*  HEADER 表頭_上  */
-  .header {
-    padding: 28px 0;
-  }
-  .header .logo {
-    width: 147px;
-    height: 24px;
-  }
-
-  .navbar_btn {
-    display: block;
-  }
-
-  .navbar_menu {
-    display: none;
-  }
-
-  .navbar_collapse.show {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*  HEADER 表頭_下  */
-  h1 {
-    font-size: 48px;
-  }
-
-  .break_line {
-    display: block;
-  }
-
-  .header_body button {
-    margin-bottom: 180px;
-  }
-
-  .deco img {
-    width: 117px;
-    height: auto;
-  }
+@media (max-width: 1200px) {
 
   /*  SERVICE_SECTION  */
-  .service_section {
-    margin-bottom: 120px;
-  }
-
   .service {
     flex-direction: column;
   }
-  /* SERVICE SLOGAN */
+
   h2 {
-    font-size: 20px;
     margin-bottom: 24px;
+  }
+
+  .break_line_rwd1200 {
+    display: block;
   }
 
   .service p {
     width: 100%;
-    font-size: 32px;
-  }
-
-  /*  SERVICE CARD  */
-  .service_card {
-    flex-direction: column;
-  }
-
-  .sc_info {
-    width: 100%;
-    padding: 40px 20px;
   }
 
   /*  ENTERPRISE SECTION  */
-  .enterprise_section {
-    margin-bottom: 120px;
-  }
-  /*  廠商 ENTERPRISE LOGO  */
-  .enterprise_logo {
-    margin-top: 0;
-  }
-  /*  ENTERPRISE LOGO>遮罩  */
-  .enterprise_logo::after,
-  .enterprise_logo::before {
-    width: 83px;
-  }
-  /*  推薦心得 RECOMMEND  */
   .recommend {
     margin: 48px 0 24px 0;
   }
 
-  .rwd-hide {
-    display: none;
+  .recommend_card {
+    width: calc(100% / 2);
   }
 
   .recommend_page {
@@ -820,6 +858,11 @@ body {
     gap: 8px;
   }
 
+  .rwd_hide_w1024 {
+    display: none;
+  }
+
+  /* RECOMMEND>頁碼 */
   .page_dot1 {
     display: inline-block;
     width: 12px;
@@ -836,59 +879,149 @@ body {
     border-radius: 999em;
   }
 
-  /*  PRODUCT_SECTION  */
+  .rwd_hidedot_w1024 {
+    display: none;
+  }
+
+  /* PRODUCT SECTION */
   .product_section {
-    max-width: 100vw;
-    padding: 80px 10px 80px 12px;
     border-radius: 16px;
   }
-  /*  SLOGAN  */
-  .s4_slogan {
-    font-size: 32px;
-    margin-bottom: 32px;
+
+  .product {
+    justify-content: space-between;
+    gap: 12px;
   }
+
+  .product_card {
+    width: calc(100% / 3 - 1em);
+  }
+
+  .product_cover {
+    width: 100%;
+  }
+}
+
+/****** RWD 767--------
+----------------- *******/
+@media (max-width: 767px) {
+
+  /*  HEADER SECTION  */
+  .header_section {
+    margin-bottom: 120px;
+  }
+
+  /*  HEADER 表頭_上  */
+  .header {
+    padding: 28px 0;
+  }
+
+  .header .logo {
+    width: 147px;
+    height: 24px;
+  }
+
+  .navbar_btn {
+    display: block;
+  }
+
+  .navbar_menu {
+    display: none;
+  }
+  
+
+
+  /*  HEADER 表頭_下  */
+  h1 {
+    font-size: 48px;
+  }
+
+  .header_body button {
+    margin-bottom: 180px;
+  }
+
+  .deco img {
+    width: 117px;
+    height: auto;
+  }
+
+  /*  SERVICE SECTION  */
+  .service_section {
+    margin-bottom: 120px;
+  }
+
+  /*  SERVICE CARD  */
+  .service_card {
+    flex-direction: column;
+  }
+
+  .sc_info {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  /*  ENTERPRISE SECTION  */
+  .enterprise_section {
+    margin-bottom: 120px;
+  }
+
+  /*  廠商 ENTERPRISE LOGO  */
+  .enterprise_logo {
+    margin-top: 0;
+  }
+
+  /*  ENTERPRISE LOGO>遮罩  */
+  .enterprise_logo::after,
+  .enterprise_logo::before {
+    width: 83px;
+  }
+
+  /*  推薦心得 RECOMMEND  */
+  .recommend_card {
+    width: 100%;
+  }
+
+  .rwd_hide_w768 {
+    display: none;
+  }
+
+  /* RECOMMEND>頁碼 */
+  .rwd_hidedot_w1024 {
+    display: inline-block;
+  }
+
+  /*  PRODUCT SECTION  */
+  .product_section {
+    padding: 80px 10px 80px 12px;
+  }
+
   /*  搜尋 BAR  */
   .searchbar {
     width: 100%;
   }
+
   /*  篩選器  */
   .select {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 16px;
   }
-  /*  分類按鈕  */
-  .select_list {
-    order: 2;
-  }
-  .select_product li {
-    white-space: nowrap;
-  }
+
   /*  產品列表  */
   .product {
     margin: 48px 0 32px 0;
-    flex-direction: column;
-  }
-  /*  產品列表>內部卡片  */
-  .product_card {
-    width: 351px;
-  }
-  .product_cover {
-    width: 100%;
-  }
-  .product_img {
-    width: 351px;
-    height: 312px;
   }
 
-  /*  FOOTER_SECTIION  */
-  /*  SLOGAN & START  */
-  .build_service {
-    margin: 40px 0;
-    padding: 120px 75.5px;
+  /*  產品列表>內部卡片  */
+  .product_card {
+    width: 48%;
   }
+
+  /*  FOOTER SECTIION  */
+  /*  SLOGAN & START  */
   .build_service div {
     font-size: 32px;
   }
+
   /*  FOOTER_上  */
   .footer_top {
     flex-direction: column;
@@ -897,14 +1030,95 @@ body {
   .footer_menu a {
     font-size: 48px;
   }
+
   .footer_top .logo {
     order: -1;
     margin-bottom: 40px;
   }
+
   /* FOOTER_下 */
+  .copyright {
+    margin-right: 0;
+  }
+
   .footer_buttom {
     flex-wrap: wrap;
     gap: 12px;
+  }
+}
+
+
+
+@media (max-width: 376px) {
+
+  /*  HEADER SECTION  */
+  .deco img {
+    width: calc(100%/3);
+  }
+
+  .break_line_rwd376 {
+    display: block;
+  }
+
+
+  /* SERVICE SECTION */
+  h2 {
+    font-size: 20px;
+  }
+
+  .service p {
+    font-size: 32px;
+  }
+
+  /* PRODUCT SECTION */
+  .product_section {
+    overflow: hidden;
+  }
+
+  /*  SLOGAN  */
+  .product_contain {
+    width: 100%
+  }
+
+  .product_card {
+    width: 100%;
+  }
+
+  .s4_slogan {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  /*  篩選器  */
+  .select {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /*  分類按鈕  */
+  .select_list {
+    order: 2;
+  }
+
+  .select_product li {
+    white-space: nowrap;
+  }
+
+  .product {
+    flex-direction: column;
+  }
+
+  .product_card {
+    max-width: 100%;
+  }
+
+  /* FOOTER SECTION */
+  .build_service div {
+    text-align: center;
+  }
+
+  .copyright {
+    margin-right: 0px;
   }
 
   .footer_buttom ul {
