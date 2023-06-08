@@ -333,6 +333,10 @@ body {
   width: 856px;
 }
 
+.break_line_rwdwindows {
+  display: block;
+}
+
 /* SERVICE CARD */
 .service_card {
   display: flex;
@@ -825,7 +829,6 @@ body {
 /****** RWD 1200--------
 ----------------- *******/
 @media (max-width: 1199.98px) {
-
   /*  SERVICE_SECTION  */
   .service {
     flex-direction: column;
@@ -906,7 +909,6 @@ body {
 /****** RWD 768--------
 ----------------- *******/
 @media (max-width: 767.98px) {
-
   /*  HEADER SECTION  */
   .header_section {
     margin-bottom: 120px;
@@ -947,6 +949,18 @@ body {
   /*  SERVICE SECTION  */
   .service_section {
     margin-bottom: 120px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .service p {
+    font-size: 32px;
+  }
+
+  .break_line_rwdwindows {
+    display: inline-block;
   }
 
   /*  SERVICE CARD  */
@@ -1046,20 +1060,17 @@ body {
   }
 }
 
-
-/****** RWD 375--------
+/****** RWD 420--------
 ----------------- *******/
-@media (max-width: 376px) {
-
+@media (max-width: 420px) {
   /*  HEADER SECTION  */
   .deco img {
-    width: calc(100%/3);
+    width: calc(100% / 3);
   }
 
   .break_line_rwd376 {
     display: block;
   }
-
 
   /* SERVICE SECTION */
   h2 {
@@ -1071,9 +1082,9 @@ body {
   }
 
   /* PRODUCT SECTION */
-   /*  SLOGAN  */
+  /*  SLOGAN  */
   .product_contain {
-    width: 100%
+    width: 100%;
   }
 
   .product_card {
@@ -1094,6 +1105,21 @@ body {
   /*  分類按鈕  */
   .select_list {
     order: 2;
+    overflow-x: scroll;
+  }
+
+  /* 隱藏 分類按鈕 的 x 軸 */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .select_list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .select_list {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 
   .select_product li {
