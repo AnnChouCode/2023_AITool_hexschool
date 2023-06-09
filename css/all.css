@@ -225,9 +225,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-*,
-:before,
-*:after {
+*, *::before, *::after {
   box-sizing: border-box;
   /* outline: 1px solid salmon; */
 }
@@ -733,6 +731,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.page li:hover{
+  border:1px solid #020202;
+}
+
+.page li:active{
+  color:#f2f2f2;
+  background-color: #020202;
+}
+
 
 .page .default {
   background-color: #020202;
