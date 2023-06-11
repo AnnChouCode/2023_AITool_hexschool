@@ -1,0 +1,147 @@
+/******* HEADER SECTION------
+----------------- *******/
+/* HEADER 表頭_上 */
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $black00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: block;
+    width: 245px;
+    height: 40px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .navbar_btn {
+    cursor: pointer;
+    /* 改變滑鼠形狀 */
+    display: none;
+    /* 在電腦版時不顯示 */
+    background-color: transparent;
+    border: 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .navbar_menu {
+    display: flex;
+    gap: 20px;
+
+    &a {
+      padding: 12px 0;
+      margin-left: 20px;
+    }
+  }
+
+}
+
+/* HEADER 表頭_下 */
+.header_body {
+  .header_slogan {
+    margin: 40px 0;
+  }
+
+  button {
+    margin-bottom: 100px;
+  }
+
+  .start_button a {
+    display: block;
+    padding: 20px 40px;
+  }
+
+  /* HEADER>服務卡 */
+  .deco {
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+
+    img {
+      width: 180px;
+      height: 180px;
+      display: block;
+    }
+  }
+}
+
+
+/****** RWD 992--------
+----------------- *******/
+@media (max-width: 992px) { 
+  .break_line_rwd992{
+    display: inline-block;
+  }
+}
+
+
+/****** RWD 768--------
+----------------- *******/
+@media (max-width: 767.98px) {
+
+  /*  HEADER SECTION  */
+  .header_section {
+    margin-bottom: 120px;
+
+    /*  HEADER 表頭_上  */
+    .header {
+      padding: 28px 0;
+
+      .logo {
+        width: 147px;
+        height: 24px;
+      }
+
+      .navbar_btn {
+        display: block;
+      }
+
+      .navbar_menu {
+        display: none;
+      }
+    }
+  }
+
+  /*  HEADER 表頭_下  */
+  .header_body {
+    .header_slogan {
+      font-size: 48px;
+    }
+
+    .break_line_rwd992{
+      display: inline-block;
+    }
+
+    button {
+      margin-bottom: 180px;
+    }
+
+    .deco img {
+      width: 117px;
+      height: auto;
+    }
+  }
+}
+
+
+/****** RWD 576--------
+----------------- *******/
+@media (max-width: 575.98px) {
+  .header_body {
+    .break_line_rwd376 {
+      display: block;
+    }
+
+    .deco img {
+      width: calc(100% / 3);
+    }
+  }
+}
