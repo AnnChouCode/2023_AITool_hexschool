@@ -10,17 +10,17 @@
     width: 856px;
   }
 
-  .break_line_rwdwindows {
+  .break-line-rwdwindows {
     display: block;
   }
 }
 
 /* SERVICE CARD */
-.service_card{
+.service-card{
   margin-right: 0;
   margin-left: 0;
 
-  .sc_info {
+  .sc-info {
     padding: 80px 40px;
     border: 1px solid $black80;
     border-radius: 16px;
@@ -45,11 +45,11 @@
   .service {
     flex-direction: column;
 
-    .h2_slogan {
+    .h2-slogan {
       margin-bottom: 24px;
     }
 
-    .break_line_rwd1200 {
+    .break-line-rwd1200 {
       display: block;
     }
 
@@ -63,12 +63,12 @@
 /****** RWD 768--------
 ----------------- *******/
 @media (max-width: 767.98px) {
-  .service_section {
+  .service-section {
     margin-bottom: 120px;
   }
 
   .service {
-    .h2_slogan {
+    .h2-slogan {
       font-size: 20px;
     }
 
@@ -76,16 +76,16 @@
       font-size: 32px;
     }
 
-    .break_line_rwdwindows {
+    .break-line-rwdwindows {
       display: inline;
     }
   }
 
   /*  SERVICE CARD  */
-  .service_card {
+  .service-card {
     flex-direction: column;
 
-    .sc_info {
+    .sc-info {
       padding: 40px 20px;
     }
   }
@@ -95,7 +95,7 @@
 /****** RWD 576--------
 ----------------- *******/
 @media (max-width: 575.98px) {
-  .service_section {
+  .service-section {
     .service p {
       font-size: 32px;
     }

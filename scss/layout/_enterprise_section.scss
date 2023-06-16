@@ -1,7 +1,7 @@
 /******* ENTERPRISE SECTION------
 ----------------- *******/
 /* ENTERPRISE LOGO */
-.enterprise_logo {
+.enterprise-logo {
   margin-top: 80px;
   position: relative;
 
@@ -47,7 +47,7 @@
     /* Firefox */
   }
 
-  .e_logo {
+  .e-logo {
     width: 160px;
     height: 40px;
     display: block;
@@ -60,62 +60,60 @@
   }
 
   .logo01 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true);
+    background-image: url(image/enterprise.png);
     width: 100px; // 原始圖檔尺寸不同，所以特別做設定      
   }
 
   .logo02 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true);
+    background-image: url(image/enterprise1.png);
   }
 
   .logo03 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true);
+    background-image: url(image/enterprise2.png);
   }
 
   .logo04 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true);
+    background-image: url(image/enterprise3.png);
   }
 
   .logo05 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true);
+    background-image: url(image/enterprise4.png);
   }
 
   .logo06 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true);
+    background-image: url(image/enterprise5.png);
   }
 
   .logo07 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true);
+    background-image: url(image/enterprise6.png);
   }
 
   .logo08 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true);
+    background-image: url(image/enterprise7.png);
   }
 
   .logo09 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true);
+    background-image: url(image/enterprise8.png);
   }
 
   .logo10 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true);
+    background-image: url(image/enterprise9.png);
   }
 
   .logo11 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true);
+    background-image: url(image/enterprise11.png);
   }
 
   .logo12 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true);
+    background-image: url(image/enterprise12.png);
   }
 }
 
 /* ENTERPRISE RECOMMEND */
 .recommend {
-  display: flex;
-  gap: 24px;
   margin: 160px 0;
 
-  .recommend_card {
+  .recommend-card {
     height: 400px;
     background-color: RGB(255, 255, 255, 0.08);
     border-radius: 16px;
@@ -123,13 +121,13 @@
     display: flex;
     flex-direction: column;
 
-    .recommend_stars {
+    .recommend-stars {
       display: flex;
       gap: 4px;
       margin-bottom: 22px;
     }
 
-    .recommend_text {
+    .recommend-text {
       flex-grow: 1;
       text-align: justify;
     }
@@ -141,11 +139,38 @@
       height: 49px;
     }
 
-    .recommender_photo {
+    .recommender-photo {
       width: 48px;
       height: 48px;
       display: block;
       margin-right: 16px;
+    }
+  }
+}
+
+/* ENTERPRISE RECOMMEND SWIPER 設定*/
+.swiper {
+  padding-bottom: 36px;
+  /*  因為 swiper 本身有 overflow:hidden;，導致 pagination 如果超出範圍會被隱藏，所以下推 36px（pagination 本身 12px + 希望距離 24px）  */
+
+  // SWIPER 頁碼 pagination
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    /*  緊貼 swiper 底部即可  */
+
+    &-bullet {
+      /*  pagination 預設樣式  */
+      background: $black80;
+    }
+
+    &-bullet-active {
+      /*  pagination 被點擊樣式  */
+      height: 12px;
+      width: 12px;
+      background: $black00;
     }
   }
 }
@@ -158,76 +183,39 @@
   /*  ENTERPRISE SECTION  */
   .recommend {
     margin: 48px 0 24px 0;
+  }
+}
 
-    .rwd_hide_w1200 {
-      display: none;
+
+
+/****** RWD 768--------
+----------------- *******/
+@media (max-width: 767.98px) {
+  .enterprise-section {
+    margin-bottom: 120px;
+
+    .h2-slogan {
+      font-size: 20px;
+    }
+    
+    .rwd-hide-w768 {
+      display: none; /*  隱藏第二排廠商 logo  */
     }    
   }
 
-  .recommend_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  .h2-slogan {
+    margin-bottom: 76px;
   }
 
+  /*  廠商 ENTERPRISE LOGO  */
+  .enterprise-logo {
+    margin-top: 0;
 
-  /* RECOMMEND>頁碼 */
-  .page_dot1 {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 999em;
-  }
-
-  .page_dot2 {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: $black80;
-    border-radius: 999em;
-  }
-
-  .rwd_hidedot_w1200 {
-    display: none;
-  }
-
-
-  /****** RWD 768--------
------------------ *******/
-  @media (max-width: 767.98px) {
-    .enterprise_section {
-      margin-bottom: 120px;
-
-      .h2_slogan {
-        font-size: 20px;
-      }
-
-      .rwd_hide_w768 {
-        display: none;
-      }
+    /*  ENTERPRISE LOGO>遮罩  */
+    &::after,
+    &::before {
+      width: 83px;
+      height: 40px;
     }
-
-    .h2_slogan {
-      margin-bottom: 76px;
-    }
-
-    /*  廠商 ENTERPRISE LOGO  */
-    .enterprise_logo {
-      margin-top: 0;
-
-      /*  ENTERPRISE LOGO>遮罩  */
-      &::after,
-      &::before {
-        width: 83px;
-        height: 40px;
-      }
-    }   
-
-    /* RECOMMEND>頁碼 */
-    .rwd_hidedot_w1200 {
-      display: inline-block;
-    }
-  }
+  }  
 }

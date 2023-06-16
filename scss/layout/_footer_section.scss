@@ -1,7 +1,7 @@
 /****** FOOTER SECTION --------
 ----------------- *******/
 /* FOOTER SLOGAN & START */
-.build_service {
+.build-service {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +16,8 @@
   }
 }
 
-/* FOOTER_上 */
-.footer_top {
+/* FOOTER-上 */
+.footer-top {
   padding: 80px 0;
   border-top: 1px solid $black00;
   display: flex;
@@ -27,22 +27,22 @@
     display: block;
     width: 245px;
     height: 40px;
-    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+    background-image: url(image/logo.png);
     background-size: cover;
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  .footer_menu {
+  .footer-menu {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 }
 
-/* FOOTER_下 */
-.footer_buttom {
+/* FOOTER-下 */
+.footer-buttom {
   border-top: 1px solid $black00;
   padding: 20px 0;
   display: flex;
@@ -85,15 +85,15 @@
 @media (max-width: 767.98px) {
 
   /*  SLOGAN & START  */
-  .build_service div {
+  .build-service div {
     font-size: 32px;
   }
 
-  /*  FOOTER_上  */
-  .footer_top {
+  /*  FOOTER-上  */
+  .footer-top {
     flex-direction: column;
 
-    .footer_menu a {
+    .footer-menu a {
       font-size: 48px;
     }
 
@@ -103,8 +103,8 @@
     }
   }
 
-  /* FOOTER_下 */
-  .footer_buttom {
+  /* FOOTER-下 */
+  .footer-buttom {
     flex-wrap: wrap;
     gap: 12px;
 
@@ -117,16 +117,16 @@
 /****** RWD 576--------
 ----------------- *******/
 @media (max-width: 575.98px) {
-  .build_service div {
+  .build-service div {
     text-align: center;
   }
 
-  .break_line_rwd576{
+  .break-line-rwd576{
     display: block;
   }
 
-  /* FOOTER_下 */
-  .footer_buttom ul {
+  /* FOOTER-下 */
+  .footer-buttom ul {
     order: 2;
   }
 }

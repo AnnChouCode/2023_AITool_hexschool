@@ -49,51 +49,51 @@ $black00: #FFFFFF;
     font-weight: 400;
 }
 
-.h3_slogan {
+.h3-slogan {
     margin-bottom: 12px;
 }
 
-.fs_120 {
+.fs-120 {
     font-size: 120px;
 }
 
-.fs_80 {
+.fs-80 {
     font-size: 80px;
 }
 
-.fs_48 {
+.fs-48 {
     font-size: 48px;
 }
 
-.fs_32 {
+.fs-32 {
     font-size: 32px;
 }
 
-.fs_20 {
+.fs-20 {
     font-size: 20px;
 }
 
-.fs_16 {
+.fs-16 {
     font-size: 16px;
 }
 
-.fs_14 {
+.fs-14 {
     font-size: 14px;
 }
 
 
 
 /* 行高設定 */
-.lh_150 {
+.lh-150 {
     line-height: 150%;
 }
 
-.lh_120 {
+.lh-120 {
     line-height: 120%;
 }
 
 /* 按鈕 & 超連結 */
-.start_button {
+.start-button {
     background-color: black;
     border: 1px solid $black00;
     border-radius: 16px;
@@ -110,19 +110,23 @@ a:hover{
 
 
 /* 間距 */
-.mb_160{
+.mb-160{
     margin-bottom: 160px;
 }
 
-.mb_12{
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-12{
     margin-bottom: 12px;
 }
 
-.mb_8 {
+.mb-8 {
     margin-bottom: 8px;
 }
 
-.gap_24{
+.gap-24{
     gap:24px;
 }
 

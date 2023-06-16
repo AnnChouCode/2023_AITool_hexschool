@@ -1,6 +1,6 @@
 /******* HEADER SECTION------
 ----------------- *******/
-/* HEADER 表頭_上 */
+/* HEADER 表頭-上 */
 .header {
   padding: 20px 0;
   border-bottom: 1px solid $black00;
@@ -12,14 +12,14 @@
     display: block;
     width: 245px;
     height: 40px;
-    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+    background-image: url(image/logo.png);
     background-size: cover;
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  .navbar_btn {
+  .navbar-btn {
     cursor: pointer;
     /* 改變滑鼠形狀 */
     display: none;
@@ -32,7 +32,7 @@
     }
   }
 
-  .navbar_menu {
+  .navbar-menu {
     display: flex;
     gap: 20px;
 
@@ -44,9 +44,9 @@
 
 }
 
-/* HEADER 表頭_下 */
-.header_body {
-  .header_slogan {
+/* HEADER 表頭-下 */
+.header-body {
+  .header-slogan {
     margin: 40px 0;
   }
 
@@ -54,7 +54,7 @@
     margin-bottom: 100px;
   }
 
-  .start_button a {
+  .start-button a {
     display: block;
     padding: 20px 40px;
   }
@@ -77,7 +77,7 @@
 /****** RWD 992--------
 ----------------- *******/
 @media (max-width: 992px) { 
-  .break_line_rwd992{
+  .break-line-rwd992{
     display: inline-block;
   }
 }
@@ -88,10 +88,10 @@
 @media (max-width: 767.98px) {
 
   /*  HEADER SECTION  */
-  .header_section {
+  .header-section {
     margin-bottom: 120px;
 
-    /*  HEADER 表頭_上  */
+    /*  HEADER 表頭-上  */
     .header {
       padding: 28px 0;
 
@@ -100,23 +100,23 @@
         height: 24px;
       }
 
-      .navbar_btn {
+      .navbar-btn {
         display: block;
       }
 
-      .navbar_menu {
+      .navbar-menu {
         display: none;
       }
     }
   }
 
-  /*  HEADER 表頭_下  */
-  .header_body {
-    .header_slogan {
+  /*  HEADER 表頭-下  */
+  .header-body {
+    .header-slogan {
       font-size: 48px;
     }
 
-    .break_line_rwd992{
+    .break-line-rwd992{
       display: inline-block;
     }
 
@@ -135,8 +135,8 @@
 /****** RWD 576--------
 ----------------- *******/
 @media (max-width: 575.98px) {
-  .header_body {
-    .break_line_rwd376 {
+  .header-body {
+    .break-line-rwd376 {
       display: block;
     }
 
