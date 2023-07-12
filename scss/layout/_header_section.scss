@@ -12,7 +12,7 @@
     display: block;
     width: 245px;
     height: 40px;
-    background-image: url(image/logo.png);
+    background-image: url(../image/logo.png);
     background-size: cover;
     text-indent: 101%;
     white-space: nowrap;
@@ -45,39 +45,39 @@
 }
 
 /* HEADER 表頭-下 */
-.header-body {
-  .header-slogan {
-    margin: 40px 0;
-  }
 
-  button {
-    margin-bottom: 100px;
-  }
+.header-slogan {
+  margin: 40px 0;
+}
 
-  .start-button a {
+.header-body button {
+  margin-bottom: 100px;
+}
+
+.header-body .start-button a {
+  display: block;
+  padding: 20px 40px;
+}
+
+/* HEADER>服務卡 */
+.header-body .deco {
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+
+  img {
+    width: 180px;
+    height: 180px;
     display: block;
-    padding: 20px 40px;
-  }
-
-  /* HEADER>服務卡 */
-  .deco {
-    margin-left: auto;
-    display: flex;
-    justify-content: end;
-
-    img {
-      width: 180px;
-      height: 180px;
-      display: block;
-    }
   }
 }
 
 
+
 /****** RWD 992--------
 ----------------- *******/
-@media (max-width: 992px) { 
-  .break-line-rwd992{
+@media (max-width: 992px) {
+  .break-line-rwd992 {
     display: inline-block;
   }
 }
@@ -116,7 +116,7 @@
       font-size: 48px;
     }
 
-    .break-line-rwd992{
+    .break-line-rwd992 {
       display: inline-block;
     }
 

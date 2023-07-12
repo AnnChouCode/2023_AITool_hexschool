@@ -1,0 +1,38 @@
+// BOOTSTRAP
+@import "../node_modules/bootstrap/scss/functions";
+
+@import "bootstrap/_variables.scss";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// BS layout & components 建議保留
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+
+// BS optional
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// BS Helpers
+@import "../node_modules/bootstrap/scss/helpers";
+
+// BS Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// RESET
+@import 'base/_reset.scss';
+
+// 載入共用樣式
+@import 'base/_style.scss';
+
+// 載入頁面內區塊
+@import 'layout/_header_section.scss';
+@import 'layout/_service_section.scss';
+@import 'layout/_enterprise_section.scss';
+@import 'layout/_product_section.scss';
+@import 'layout/_footer_section.scss';
+

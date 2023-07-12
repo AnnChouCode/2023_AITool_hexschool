@@ -112,6 +112,7 @@
       padding: 20px 0;
       border-radius: 16px;
       white-space: nowrap;
+      min-width:0; //把 bootstrap 改掉
       /* 避免 RWD 時換行 */
 
       a {

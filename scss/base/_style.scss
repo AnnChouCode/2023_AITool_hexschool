@@ -10,42 +10,42 @@ $black40: #D1D1D1;
 $black20: #F2F2F2;
 $black00: #FFFFFF;
 
-.black00 {
+.black-00 {
     color: $black00;
 }
 
-.black20 {
+.black-20 {
     color: $black20;
 }
 
-.black40 {
+.black-40 {
     color: $black40;
 }
 
-.black60 {
+.black-60 {
     color: $black60;
 }
 
-.black80 {
+.black-80 {
     color: $black80;
 }
 
-.black100 {
+.black-100 {
     color: $black100;
 }
 
 
 
 /* 文字設定----------------- */
-.bold900 {
+.fw-900 {
     font-weight: 900;
 }
 
-.bold700 {
+.fw-700 {
     font-weight: 700;
 }
 
-.bold400 {
+.fw-400 {
     font-weight: 400;
 }
 
@@ -137,12 +137,12 @@ body {
     font-family: "Noto Sans TC", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    // outline: 1px solid salmon;
-}
+// *,
+// *::before,
+// *::after {
+//     box-sizing: border-box;
+//     // outline: 1px solid salmon;
+// }
 
 .wrap {
     max-width: 1326px;
@@ -153,6 +153,7 @@ body {
 img{
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .container{
